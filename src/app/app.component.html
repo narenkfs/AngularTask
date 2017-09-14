@@ -1,0 +1,16 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<h2> This is About the Angular2 Assignment </h2>
+<div class="container" >
+  <table class="table table-bordered">
+    <tr>
+      <th class="pointer" (click)="sort('name')" ><b>Name</b></th>
+      <th class="pointer" (click)="sort('category')">Category </th>
+      <th class="pointer" (click)="sort('amount')">ammount</th>
+    </tr>
+    <tr *ngFor="let item of UserData">
+      <td>{{item.name}}</td>
+      <td>{{item.category}}</td>
+      <td>{{item.amount}}</td>
+    </tr>
+  </table>
+</div>
